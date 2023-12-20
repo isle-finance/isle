@@ -1,0 +1,37 @@
+{
+  "name": "isle",
+  "description": "Smart contracts of the isle finance supply chain financing capital.",
+  "version": "0.1.0",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^2.8.7",
+    "solhint-community": "^3.5.0"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "forge",
+    "foundry",
+    "smart-contracts",
+    "solidity",
+    "template"
+  ],
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf cache out",
+    "gas-report": "./shell/gas-report.sh",
+    "lint": "pnpm lint:sol && pnpm prettier:check",
+    "lint:sol": "forge fmt --check && pnpm solhint \"{script,src,test}/**/*.sol\"",
+    "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
+    "prettier:write": "prettier --write \"**/*.{json,md,yml}\""
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.9.2",
+    "@prb/math": "^4.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

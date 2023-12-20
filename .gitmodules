@@ -1,0 +1,18 @@
+[submodule "modules/openzeppelin-contracts"]
+	path = modules/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "modules/prb-test"]
+	path = modules/prb-test
+	url = https://github.com/PaulRBerg/prb-test
+[submodule "modules/forge-std"]
+	path = modules/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "modules/prb-math"]
+	path = modules/prb-math
+	url = https://github.com/PaulRBerg/prb-math
+[submodule "modules/openzeppelin-contracts-upgradeable"]
+	path = modules/openzeppelin-contracts-upgradeable
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable
+[submodule "modules/solarray"]
+	path = modules/solarray
+	url = https://github.com/evmcheb/solarray
